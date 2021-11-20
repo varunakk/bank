@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+        "id": "123",
+      "name": "vineeta",
+      "acc": "123",
+      "password": "test123"
+    },
+    {
+        "id": "1234",
+      "name": "varuna1",
+      "acc": "1234",
+      "password": "test1234"
+    },
+    {
+        "id": "345",
+      "name": "varuna2",
+      "acc": "345",
+      "password": "test123"
+    },
+    {
+      "id": "82",
+      "name": "vikram",
+      "password": "vik",
+      "acc": "82"
+    }
+  ]
+}

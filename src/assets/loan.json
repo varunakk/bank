@@ -1,0 +1,21 @@
+[
+    
+    {
+        "acc":"123",
+        "loan_amount":"10000",
+        "interest":"11.2%",
+        "no_of_months":"24",
+        "amount_to_be_payed":"20000"
+
+    },
+    {
+        "acc":"1235",
+        "loan_amount":"10000",
+        "interest":"11.2%",
+        "no_of_months":"24",
+        "amount_to_be_payed":"20000"
+    }
+    
+    
+
+]
