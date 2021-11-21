@@ -5,6 +5,7 @@ import {useHistory} from "react-router-dom";
 //import jsonServer from './api/jsonServer';
 import users from "./assets/users.json"
 import api from './api/jsonServer';
+import { uuid } from "uuidv4";
 
 function Signup(props){
     const [usrname1,setUsername]=useState("");
@@ -29,14 +30,15 @@ function Signup(props){
     const addUserHandler=async ()=>{
         let x=Math.ceil(Math.random() * 100)
         const   request={
-            "id":'' + x,
+            "id":uuid(),
+            "balance":Math.floor(Math.random() * 100000) + 1,
             "name":usrname1,
             "password":Password1,
             "acc":''+x,
            };
            console.log(request)
         const response=await(api.post("/users",request));
-        console.log(response)
+        console.log(response) 
         history.push("/Login");
       }
   

@@ -1,19 +1,19 @@
 {
   "users": [
     {
-        "id": "123",
+      "id": "123",
       "name": "vineeta",
       "acc": "123",
       "password": "test123"
     },
     {
-        "id": "1234",
+      "id": "1234",
       "name": "varuna1",
       "acc": "1234",
       "password": "test1234"
     },
     {
-        "id": "345",
+      "id": "345",
       "name": "varuna2",
       "acc": "345",
       "password": "test123"
@@ -23,6 +23,26 @@
       "name": "vikram",
       "password": "vik",
       "acc": "82"
+    },
+    {
+      "id": "45",
+      "name": "v",
+      "password": "5",
+      "acc": "45"
+    },
+    {
+      "id": "ad6d4140-22da-4ebf-bb19-e9a95dbfecc0",
+      "balance": 48246,
+      "name": "chimpu",
+      "password": "2020",
+      "acc": "64"
+    },
+    {
+      "id": "4d5eda75-91c3-465c-8f24-b59ecc1235bf",
+      "balance": 103015,
+      "name": "sampu",
+      "password": "2020",
+      "acc": "43"
     }
   ]
 }
