@@ -11,7 +11,7 @@ import SendMoney from './SendMoney';
 import Header from './Header';
 import Loan from './Loan';
 import Loandetai from './loandetails';
-
+import Takeloan from './takeloan';
 
 function App() {
   return (
@@ -35,7 +35,7 @@ function App() {
     <Route path="/About"> <Header page="About" /><hr/><About/>  </Route>
     
     <Route exact path ="/Loan"><Header page="Loan" /><hr/><Loan/></Route>
-    <Route path ="/Loan/giveloan">{"loading"}</Route>
+    <Route path ="/Loan/giveloan"><Header page="takeloan" /><Takeloan/></Route>
     <Route path ="/Loan/loandetails"><Header page="Loandet" /><hr/><Loandetai/></Route>
     </Switch>
 </Router>
