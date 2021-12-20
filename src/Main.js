@@ -8,10 +8,8 @@ function Main({user}){
     <h2>Main page</h2>
 
     <h1>Welcome {user} </h1>
-    <Link to="/Main/Transactions"> Transactions </Link><br/>
-    <Link to="/Main/SendMoney"> Send Money </Link>
-   
-    
+    Your Balance,{users.users.filter((nam) => nam.name === user).map(x => <h2>{x.balance} rs</h2> )}
+
     </>)
     }
 
