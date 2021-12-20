@@ -1,6 +1,6 @@
 import {BrowserRouter as Router ,Link,Switch, Route} from "react-router-dom";
 import { useLocation } from "react-router-dom";
-
+import "./Header.css"
 function Header(props){
 if (props.page==="home"){
     return(
@@ -9,7 +9,7 @@ if (props.page==="home"){
           <Link to="/"> Home </Link><br/>
           <Link to="/About"> About </Link><br/>
 
-          <Link to="/Contact"> Contact </Link><br/>
+        <Link to="/Contact"> Contact </Link><br/>
         <Link to="/Login">Login</Link><br/>
         <Link to="/Signup">Signup</Link>
         
@@ -29,13 +29,26 @@ if (props.page==="Login"){
       )
 }
 if (props.page==="Main"){
-    return (<div>
+    return (     <div className="head"> 
+        <div >
     <Link to="/Main/Transactions"> Transactions </Link> <br/>
+    </div>
+    <div>
     <Link to="/Main/SendMoney"> Send Money </Link><br/>
+    </div>
+    <div>
     <Link to="/Loan"> Loan </Link><br/>
+    </div>
+    <div>        
+    <Link to="/Main/reqMon">requestForMoneyDetails</Link>    <br/>
+    </div>
+    <div>        
+    <Link to="/Main/makereq">MakerequestForMoney</Link>    <br/>
+    </div>
+
+    <div>
     <Link to="/"> Sign out </Link>  
-
-
+    </div>
     
         </div>
     
@@ -48,6 +61,24 @@ if (props.page==="Main"){
       </div>
       )
 }
+if (props.page==="reqMon"){
+    return ( <div> 
+        <Link to="/Main"> Home </Link> {"> requestForMoney "} 
+
+      
+      </div>
+      )
+}
+if (props.page==="makereq"){
+    return ( <div> 
+        <Link to="/Main"> Home </Link> {"> Make Request"} <br/>        
+
+
+      
+      </div>
+      )
+}
+
 if (props.page==="Contact"){
     return ( <div> 
         <Link to="/"> Home </Link> {"> Contact "} 
@@ -97,7 +128,17 @@ if (props.page==="Loandet"){
       
       </div>
       )
+    }
+
+if (props.page==="TakeLoan"){
+        return (<div>
+          <Link to="/Main"> Home </Link> {"> TakeLoan "} <br/>
+            
+            </div>
+        
+        )
 }
+
 else{
     return <h6></h6>
 }
